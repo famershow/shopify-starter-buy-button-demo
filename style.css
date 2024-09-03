@@ -1,0 +1,27 @@
+#shopload {
+	background: url(loading.gif) center center no-repeat;
+	min-height: 200px;
+}
+.shopify-all {
+	background: #fff;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+	padding: 15px;
+}
+.shopify-all-single {
+	width: 205px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 5px;
+	background: #fff url(loading.gif) top center no-repeat;
+	border: 1px solid #eee;
+}
+@media (max-width: 600px) {
+	.shopify-all-single {
+		max-width: 205px;
+		width: Calc(50% - 22px);
+	}
+}
